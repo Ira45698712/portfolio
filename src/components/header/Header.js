@@ -6,7 +6,7 @@ const Header = () => {
         <header className="header">
         <div className="header__wrapper">
             <h1 className="header__title">
-                <strong>Приветсьвую Вас, меня зовут <em>Ирина</em></strong><br />
+                <strong>Приветствую Вас, меня зовут <em>Ирина</em></strong><br />
                 Я frontend-developer
             </h1>
             <div className="header__text">
