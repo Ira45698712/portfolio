@@ -1,0 +1,46 @@
+
+.form{
+    border: orange solid 2px;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+form input{
+    height: 55px;
+    width: 400px;
+    border: solid 1px grey;
+    padding: 20px;
+    font-size: 19px;
+}
+.name_form{
+    font-size: 28px;
+    
+}
+.btn_connection{
+    background-color: orange;
+    padding: 15px 40px;
+
+}
+.btn_connection:hover{
+    background-color: rgb(209, 172, 10);
+}
+
+
+@media (max-width: 620px) {
+    .form{
+        width: 85%;
+    }
+    form input{
+        width: 90%;
+        font-size: 22px;
+    }
+}
