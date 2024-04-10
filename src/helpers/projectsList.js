@@ -59,7 +59,7 @@ const projects = [
     },
     {
         id: 6,
-        title: 'Gaming community',
+        title: 'Website magasine Allison',
         skills: 'HTML, CSS, JavaScript',
         img: project06,
         imgBig: project06Big,

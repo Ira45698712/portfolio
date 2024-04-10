@@ -20,17 +20,18 @@ export const Slider = ( {children} ) =>{
             return activeId
         })
     }
-
+   
     return (
         <div className="slider-wrap">
             <div className="slider__actions">
             <IconButton direction="left" onClick={prev} disable={activeId === 0}/>
             <IconButton direction="right" onClick={next} disable={activeId === children.length - 1}/>
         </div>
-            <div className="slider">
+            <div className="slider" >
             {children.map((slide, idx) => (
-                <div className={`slide${idx === activeId ? 'active' : ''}`}>{slide}</div>
+                <div key={idx.toString()} onClick={() => setActiveId(idx)} className={`slide${idx === activeId ? 'active' : ''}`} >{slide}</div>
             ))}
+            
         </div>
         </div>
     )

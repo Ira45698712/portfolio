@@ -1,105 +1,166 @@
-.resume{
-    margin: 0 auto;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.resume {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.main__blok{
-   width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
-    letter-spacing: 0.2px;
-    padding: 50px;
-    border: solid 1px grey;
+.main__blok {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  letter-spacing: 0.2px;
+  padding: 50px;
+  border: solid 1px grey;
 }
-.info__main__blok{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-self: start;
+.info__main__blok {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: start;
 }
-.info__fio{
-    font-size: 34px;
+.info__fio {
+  font-size: 34px;
 }
-.info__age{
-    margin-top: 15px;
-    letter-spacing:inherit;
+.info__age {
+  margin-top: 15px;
+  letter-spacing: inherit;
 }
-.info__status{
-    padding: 5px;
-    background-color: rgb(90, 135, 90);
-    max-width: 210px;
-    margin-top: 15px;
-    text-align: center;
+.info__status {
+  padding: 5px;
+  background-color: rgb(90, 135, 90);
+  max-width: 210px;
+  margin-top: 15px;
+  text-align: center;
 }
-.chapter{
-    color: grey;
-    font-size: 14px;
-    margin-top: 35px;
+.chapter {
+  color: grey;
+  font-size: 14px;
+  margin-top: 35px;
 }
-.info__contact{
-    margin-top: 15px;
+.info__contact {
+  margin-top: 15px;
 }
 .social {
-    margin-top: 15px;
-	display: flex;
-	column-gap: 20px;
-	align-items: center;
-    margin-bottom: 35px;
+  margin-top: 15px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  margin-bottom: 35px;
 }
-.social__item:hover{
-    border: solid 1px orange;
-    padding: 2px;
+.social__item:hover {
+  border: solid 1px orange;
+  padding: 2px;
 }
-.info__moving{
-   margin-top: 10px;
+.info__moving {
+  margin-top: 10px;
 }
-.my__photo{
-    width: 400px;
+.my__photo {
+  width: 400px;
 }
-.blok__specialization{
+.blok__specialization {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: start;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border: solid 1px grey;
+  padding: 50px;
+}
+.specialization,
+.main__skills {
+  font-size: 30px;
+}
+.name__specialization {
+  margin-top: 30px;
+}
+.my__specialization {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.info__employment {
+  margin-top: 20px;
+}
+.blok__skills {
+  width: 100%;
+  padding: 50px;
+  border: solid 1px grey;
+  margin-bottom: 15px;
+}
+.my__skills {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.skills {
+  padding: 15px;
+  background-color: rgb(90, 135, 90);
+  text-align: center;
+}
+@media (max-width: 1100px) {
+  .resume {
+    padding: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .main__blok {
+    flex-direction: column-reverse;
+  }
+  .skills {
+    padding: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .main__blok {
+    padding-left: 30px;
+    padding-right: 30px;
     width: 100%;
+  }
+  .my__photo {
+    width: 80%;
+  }
+  .blok__specialization {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .blok__skills {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
     justify-content: start;
-    align-self: start;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    border: solid 1px grey;
-    padding: 50px;
+  }
 }
-.specialization, .main__skills{
-    font-size: 30px;
-}
-.name__specialization{
-    margin-top: 30px;
-}
-.my__specialization{
+@media (max-width: 420px) {
+  .resume {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .main__blok {
+    width: 90%;
+    padding-right: 10px;
     padding-left: 10px;
-    padding-top: 5px;
-}
-.info__employment{
-    margin-top: 20px;
-}
-.blok__skills{
-    width:100%;
-    padding: 50px;
-    border: solid 1px grey;
-    margin-bottom: 15px;
-}
-.my__skills{
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-}
-.skills{
-    padding: 15px;
-    background-color: rgb(90, 135, 90);
-    text-align: center;
+    margin-left: 25px;
+    justify-self: start;
+    align-self: start;
+  }
+  .blok__specialization {
+    width: 90%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 25px;
+  }
+  .blok__skills {
+    display: none;
+  }
 }

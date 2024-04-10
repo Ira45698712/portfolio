@@ -1,4 +1,5 @@
 import "./style.css";
+import Header from "../components/header/Header";
 import photo from '../img/projects/photo.jpg'
 import vk from "../img/icons/vk.svg";
 import instagram from "../img/icons/instagram.svg";
@@ -8,6 +9,8 @@ import gitHub from "../img/icons/gitHub.svg";
 
 const Resume = () => {
   return (
+    <>
+
     <div className="resume">
       <div className="main__blok">
         <div className="info__main__blok">
@@ -62,6 +65,7 @@ const Resume = () => {
         
       </div>
     </div>
+    </>
   );
 };
 

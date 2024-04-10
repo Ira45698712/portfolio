@@ -12,7 +12,7 @@
 }
 .slide{
     flex-grow: 1;
-    height: 400px;
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
     border: 0px solid white;
@@ -35,4 +35,23 @@
 }
 .slide__info{
     left: 10px;
+}
+@media (max-width: 900px) {
+    .slider{
+        gap: 11px;
+    }
+    .slide img {
+        width: 50px;
+    }
+}
+@media (max-width: 450px) {
+    .slider{
+        gap: 8px;
+    }
+    .slide{
+        height: 200px;
+    }
+    .slide img {
+        width: 30px;
+    }
 }
